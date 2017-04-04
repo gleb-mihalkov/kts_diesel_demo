@@ -95,6 +95,11 @@ a {
   margin-left: auto;
   margin-bottom: 40px;
 }
+.container--big {
+  max-width: 1063px;
+  position: relative;
+  left: 31.5px;
+}
 .global__content {
   width: 1063px;
   margin: 0 auto 40px;
@@ -235,6 +240,10 @@ a {
   background: no-repeat url("img/icon_search.png") right 20px center;
   padding-right: 58px;
 }
+.input--search--small {
+  width: 490px;
+  margin: 0 20px 0 0;
+}
 .price:after {
   content: ' ₽';
 }
@@ -301,6 +310,10 @@ a {
 }
 .header-group__item:last-child {
   margin-right: 0 !important;
+}
+.header-group--between {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .logo {
   background: url("img/logo.png") no-repeat center center;
@@ -790,11 +803,13 @@ h1.title {
 .page__aside {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  min-width: 286px;
   border-right: 1px solid #f2f2f2;
 }
 .page__main {
   padding: 29px 35px 58px 29px;
+}
+.menu_left {
+  width: 286px;
 }
 .menu_left ul,
 .menu_left ul ul li {
@@ -916,4 +931,118 @@ ul.no-marg {
 strong.no-marg {
   display: inline-block;
   margin: 0px 0 -19px 0;
+}
+.block-icon > * {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+.block-icon__icon {
+  margin: 0 20px 0 0;
+}
+.block-icon__text {
+  color: #3f4c5c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.left-menu {
+  background-color: #fafafa;
+  width: 254px;
+  padding: 17px 10px 17px 31px;
+}
+.left-menu__item.active {
+  text-transform: uppercase;
+}
+.left-menu__item.active a {
+  color: #d31020;
+}
+.left-menu__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1b2026;
+  transition: all 250ms ease-in-out;
+}
+.left-menu__link:hover {
+  color: #d31020;
+  transition: all 250ms ease-in-out;
+}
+.catalog-filter__title {
+  color: #1b2026;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 19px 0;
+}
+.catalog-filter__group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: top;
+  align-items: top;
+  min-height: 100%;
+  margin: 0 0 39px 0;
+}
+.catalog-filter__item {
+  display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  min-width: 235px;
+}
+.select {
+  position: relative;
+  height: 51px;
+}
+.select__title {
+  color: #1b2026;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 9px 0;
+}
+.select__slide {
+  width: 235px;
+  height: 51px;
+  background-color: #fff;
+  border: 1px solid #bdc2c7;
+  border-radius: 4px;
+  position: relative;
+  background: url("../img/icon_chevron_white.png") no-repeat;
+  background-position: 204px 23px;
+  overflow: hidden;
+}
+.select__slide.active {
+  overflow: visible;
+  border: 1px solid #bdc2c7;
+  height: auto;
+  max-height: 276px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 3px 9px #bdc2c7;
+}
+.select__name {
+  color: #7e8792;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 51px;
+  padding: 0 0 0 21px;
+}
+.select__option {
+  z-index: 10;
+  max-height: 235px;
+  background: #fafafa;
+}
+.select__option input {
+  position: absolute;
+  left: -9999999999px;
+}
+.select__input-text {
+  color: #1b2026;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  width: 100%;
+  display: inline-block;
+  padding: 0 0 0 21px;
+  border-top: 1px solid #f2f2f2;
 }
