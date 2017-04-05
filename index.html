@@ -110,7 +110,7 @@
           </div>
         </div>
         <div class="header__aside">
-          <div class="header-group header-group--between  container container--big">
+          <div class="header-group header-group--between  container">
             <div class="header-group__item">
               <div class="block-icon">
                 <img src="res/icon_1.png" class="block-icon__icon">
@@ -195,128 +195,355 @@
   </ul>
 </div>    </div>
     <div class="page__main">
-      <div class="catalog-filter">
-  <div class="catalog-filter__title">Поиск запчасти по артикулу</div>
-  <div class="catalog-filter__group">
-    <div class="catalog-filter__item">
-      <input type="search" class="input input--wide input--search input--search--small" placeholder="Введите артикул детали">
-    </div>
-    <div class="catalog-filter__item">
-      <a href="#" class="button button--primary button--width-235">Помощь менеджера</a>
-    </div>
-  </div>
-  <div class="catalog-filter__group">
-    <div class="catalog-filter__item">
-      Расширенный поиск
-    </div>
-    <div class="catalog-filter__item">
-            <div class="select">
-  <div class="select__title">Марка автомобиля</div>
-  <div class="select__slide">
-    <span class="select__name">Не выбрано</span>
-    <div class="select__option">
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-1</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-2</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-3</span>
-      </label>
+      
+      <form action="#" class="form">
+  <div class="form__row form__row--offset-large">
+    <label for="txt_sku" class="label label--wide label--offset-large">Поиск запчасти по артикулу</label>
+    <div class="input-group">
+      <div class="input-group__item input-group__item--stretch">
+        <input type="search" class="input input--search input--wide" name="sku" id="txt_sku" placeholder="Введите артикул детали">
+      </div>
+      <div class="input-group__item">
+        <a href="#" class="button button--primary">Помощь менеджера</a>
+      </div>
     </div>
   </div>
+  <div class="form__row form__row--columns-3">
+    <div class="form__item">
+      <div class="label">Расширенный поиск</div>
+    </div>
+    <div class="form__item">
+      <label for="slt_mark" class="label label--wide label--offset label--small">Марка автомобиля</label>
+<div class="select select--wide" id="slt_mark">
+  <input type="hidden" class="select__input" name="mark" value="">
+  <span class="select__text" data-placeholder="Не выбрано"></span>
+  <ul class="select__options">
+    <li data-value="">Не выбрано</li>
+          <li data-value="0">Марка автомобиля 0</li>
+          <li data-value="1">Марка автомобиля 1</li>
+          <li data-value="2">Марка автомобиля 2</li>
+          <li data-value="3">Марка автомобиля 3</li>
+          <li data-value="4">Марка автомобиля 4</li>
+          <li data-value="5">Марка автомобиля 5</li>
+          <li data-value="6">Марка автомобиля 6</li>
+          <li data-value="7">Марка автомобиля 7</li>
+          <li data-value="8">Марка автомобиля 8</li>
+          <li data-value="9">Марка автомобиля 9</li>
+          <li data-value="10">Марка автомобиля 10</li>
+      </ul>
 </div>    </div>
-    <div class="catalog-filter__item">
-            <div class="select">
-  <div class="select__title">Модель автомобиля</div>
-  <div class="select__slide">
-    <span class="select__name">Не выбрано</span>
-    <div class="select__option">
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-1</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-2</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-3</span>
-      </label>
-    </div>
-  </div>
+    <div class="form__item">
+      <label for="slt_model" class="label label--wide label--offset label--small">Модель автомобиля</label>
+<div class="select select--wide" id="slt_model">
+  <input type="hidden" class="select__input" name="model" value="">
+  <span class="select__text" data-placeholder="Не выбрано"></span>
+  <ul class="select__options">
+    <li data-value="">Не выбрано</li>
+          <li data-value="0">Модель автомобиля 0</li>
+          <li data-value="1">Модель автомобиля 1</li>
+          <li data-value="2">Модель автомобиля 2</li>
+          <li data-value="3">Модель автомобиля 3</li>
+          <li data-value="4">Модель автомобиля 4</li>
+          <li data-value="5">Модель автомобиля 5</li>
+          <li data-value="6">Модель автомобиля 6</li>
+          <li data-value="7">Модель автомобиля 7</li>
+          <li data-value="8">Модель автомобиля 8</li>
+          <li data-value="9">Модель автомобиля 9</li>
+          <li data-value="10">Модель автомобиля 10</li>
+      </ul>
 </div>    </div>
-  </div>
-  <div class="catalog-filter__group">
-    <div class="catalog-filter__item">
-            <div class="select">
-  <div class="select__title">Бренд товара</div>
-  <div class="select__slide">
-    <span class="select__name">Не выбрано</span>
-    <div class="select__option">
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-1</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-2</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-3</span>
-      </label>
-    </div>
-  </div>
+    <div class="form__item">
+      <label for="slt_brand" class="label label--wide label--offset label--small">Бренд товара</label>
+<div class="select select--wide" id="slt_brand">
+  <input type="hidden" class="select__input" name="brand" value="">
+  <span class="select__text" data-placeholder="Не выбрано"></span>
+  <ul class="select__options">
+    <li data-value="">Не выбрано</li>
+          <li data-value="0">Бренд товара 0</li>
+          <li data-value="1">Бренд товара 1</li>
+          <li data-value="2">Бренд товара 2</li>
+          <li data-value="3">Бренд товара 3</li>
+          <li data-value="4">Бренд товара 4</li>
+          <li data-value="5">Бренд товара 5</li>
+          <li data-value="6">Бренд товара 6</li>
+          <li data-value="7">Бренд товара 7</li>
+          <li data-value="8">Бренд товара 8</li>
+          <li data-value="9">Бренд товара 9</li>
+          <li data-value="10">Бренд товара 10</li>
+      </ul>
 </div>    </div>
-    <div class="catalog-filter__item">
-            <div class="select">
-  <div class="select__title">Модель двигателя</div>
-  <div class="select__slide">
-    <span class="select__name">Не выбрано</span>
-    <div class="select__option">
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-1</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-2</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-3</span>
-      </label>
-    </div>
-  </div>
+    <div class="form__item">
+      <label for="slt_engine" class="label label--wide label--offset label--small">Модель двигателя</label>
+<div class="select select--wide" id="slt_engine">
+  <input type="hidden" class="select__input" name="engine" value="">
+  <span class="select__text" data-placeholder="Не выбрано"></span>
+  <ul class="select__options">
+    <li data-value="">Не выбрано</li>
+          <li data-value="0">Модель двигателя 0</li>
+          <li data-value="1">Модель двигателя 1</li>
+          <li data-value="2">Модель двигателя 2</li>
+          <li data-value="3">Модель двигателя 3</li>
+          <li data-value="4">Модель двигателя 4</li>
+          <li data-value="5">Модель двигателя 5</li>
+          <li data-value="6">Модель двигателя 6</li>
+          <li data-value="7">Модель двигателя 7</li>
+          <li data-value="8">Модель двигателя 8</li>
+          <li data-value="9">Модель двигателя 9</li>
+          <li data-value="10">Модель двигателя 10</li>
+      </ul>
 </div>    </div>
-    <div class="catalog-filter__item">
-            <div class="select">
-  <div class="select__title">Экологический класс</div>
-  <div class="select__slide">
-    <span class="select__name">Не выбрано</span>
-    <div class="select__option">
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-1</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-2</span>
-      </label>
-      <label class="select__option-item">
-        <input type="text" name="">
-        <span class="select__input-text">c-3</span>
-      </label>
-    </div>
-  </div>
+    <div class="form__item">
+      <label for="slt_emission" class="label label--wide label--offset label--small">Экологический класс</label>
+<div class="select select--wide" id="slt_emission">
+  <input type="hidden" class="select__input" name="emission" value="">
+  <span class="select__text" data-placeholder="Не выбрано"></span>
+  <ul class="select__options">
+    <li data-value="">Не выбрано</li>
+          <li data-value="0">Экологический класс 0</li>
+          <li data-value="1">Экологический класс 1</li>
+          <li data-value="2">Экологический класс 2</li>
+          <li data-value="3">Экологический класс 3</li>
+          <li data-value="4">Экологический класс 4</li>
+          <li data-value="5">Экологический класс 5</li>
+          <li data-value="6">Экологический класс 6</li>
+          <li data-value="7">Экологический класс 7</li>
+          <li data-value="8">Экологический класс 8</li>
+          <li data-value="9">Экологический класс 9</li>
+          <li data-value="10">Экологический класс 10</li>
+      </ul>
 </div>    </div>
   </div>
+</form>      <div class="products-list">
+  <form class="products-list__header">
+    <div class="products-list__param">
+      <span>Сортировать по цене</span>
+      <span class="sort">
+        <input type="radio" name="sort" class="sort__order sort__order--desc" id="rdo_sort_desc" value="desc">
+        <input type="radio" name="sort" class="sort__order sort__order--asc" id="rdo_sort_asc" value="asc">
+        <span class="sort__icon"></span>
+      </span>
+    </div>
+    <div class="products-list__param">
+      <span>Показывать по</span>
+      <span class="select select--number">
+        <input type="hidden" class="select__input" name="count">
+        <span class="select__text">20</span>
+        <ul class="select__options">
+          <li data-value="20">20</li>
+          <li data-value="50">50</li>
+          <li data-value="100">100</li>
+        </ul>
+      </span>
+    </div>
+  </form>
+  <div class="products-list__content">
+          <div class="products-list__item">
+        <form action="#" class="product-item  active">
+          <input type="hidden" name="id" value="1">
+                      <a href="#" class="product-item__image product-item__image--empty"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №1</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  ">
+          <input type="hidden" name="id" value="2">
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №2</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricedesc">Розничная цена:</div>
+              <div class="product-item__pricevalue  price">10 122</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  active">
+          <input type="hidden" name="id" value="3">
+                      <a href="#" class="product-item__image product-item__image--empty"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №3</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  ">
+          <input type="hidden" name="id" value="4">
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №4</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricedesc">Розничная цена:</div>
+              <div class="product-item__pricevalue  price">10 122</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  active">
+          <input type="hidden" name="id" value="5">
+                      <a href="#" class="product-item__image product-item__image--empty"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №5</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  ">
+          <input type="hidden" name="id" value="6">
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №6</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricedesc">Розничная цена:</div>
+              <div class="product-item__pricevalue  price">10 122</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  active">
+          <input type="hidden" name="id" value="7">
+                      <a href="#" class="product-item__image product-item__image--empty"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №7</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  ">
+          <input type="hidden" name="id" value="8">
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №8</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricedesc">Розничная цена:</div>
+              <div class="product-item__pricevalue  price">10 122</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  active">
+          <input type="hidden" name="id" value="9">
+                      <a href="#" class="product-item__image product-item__image--empty"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №9</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  ">
+          <input type="hidden" name="id" value="10">
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+                    <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №10</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+                          <div class="product-item__pricedesc">Розничная цена:</div>
+              <div class="product-item__pricevalue  price">10 122</div>
+                      </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+      </div>
+  <div class="products-list__bottom"></div>
 </div>    </div>
   </div>
     </div>
