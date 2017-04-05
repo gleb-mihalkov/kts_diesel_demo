@@ -143,18 +143,20 @@
       </header>
     </div>
     <div class="global__content">
-        <div class="block_title">
-  <div class="block_title__breadcrumbs">
-    <nav role="navigation">
-          <a href="/" class="bs__it">Главная</a>
-          <span>/</span>
-          <a href="#" class="bs__it">Каталог комплектующих к топливным системам</a>
+        <div class="container container--large">
+    <div class="page">
+      <div class="page__header">
+        <div class="lead">
+  <div class="lead__breadcrumbs">
+    <nav role="navigation" class="breadcrumbs">
+      <a href="index.html" class="breadcrumbs__item">Главная</a>
+      <a href="" class="breadcrumbs__item">Каталог комплектующих к топливным системам</a>
     </nav>
-    <h1 class="title">Каталог комплектующих к топливным системам</h1>
   </div>
-</div>  <div class="page">
-    <div class="page__aside">
-      <div class="left-menu">
+  <h1 class="lead__title">Каталог комплектующих к топливным системам</h1>
+</div>      </div>
+      <div class="page__aside">
+        <div class="left-menu">
   <ul class="left-menu__list">
     <li class="left-menu__item active">
       <a href="" class="left-menu__link">Форсунки</a>
@@ -193,10 +195,9 @@
       <a href="" class="left-menu__link">Аксессуары</a>
     </li>
   </ul>
-</div>    </div>
-    <div class="page__main">
-      
-      <form action="#" class="form">
+</div>      </div>
+      <div class="page__main">
+        <form action="#" class="form">
   <div class="form__row form__row--offset-large">
     <label for="txt_sku" class="label label--wide label--offset-large">Поиск запчасти по артикулу</label>
     <div class="input-group">
@@ -313,7 +314,8 @@
       </ul>
 </div>    </div>
   </div>
-</form>      <div class="products-list">
+</form>        <div class="page__line"></div>
+        <div class="products-list">
   <form class="products-list__header">
     <div class="products-list__param">
       <span>Сортировать по цене</span>
@@ -338,23 +340,33 @@
   </form>
   <div class="products-list__content">
           <div class="products-list__item">
-        <form action="#" class="product-item  active">
+        <form action="#" class="product-item  ">
           <input type="hidden" name="id" value="1">
-                      <a href="#" class="product-item__image product-item__image--empty"></a>
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №1</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №1</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
@@ -362,20 +374,29 @@
           <input type="hidden" name="id" value="2">
                       <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №2</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №2</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricedesc">Розничная цена:</div>
-              <div class="product-item__pricevalue  price">10 122</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
@@ -383,19 +404,26 @@
           <input type="hidden" name="id" value="3">
                       <a href="#" class="product-item__image product-item__image--empty"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №3</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №3</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Наличие и цену<br>уточняйте у менеджера
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
@@ -403,81 +431,116 @@
           <input type="hidden" name="id" value="4">
                       <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №4</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №4</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricedesc">Розничная цена:</div>
-              <div class="product-item__pricevalue  price">10 122</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
-        </form>
-      </div>
-          <div class="products-list__item">
-        <form action="#" class="product-item  active">
-          <input type="hidden" name="id" value="5">
-                      <a href="#" class="product-item__image product-item__image--empty"></a>
-                    <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
-            </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №5</a>
-            </h2>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
           </div>
-          <div class="product-item__price">
-                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
         <form action="#" class="product-item  ">
-          <input type="hidden" name="id" value="6">
+          <input type="hidden" name="id" value="5">
                       <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №5</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №6</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricedesc">Розничная цена:</div>
-              <div class="product-item__pricevalue  price">10 122</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
         <form action="#" class="product-item  active">
-          <input type="hidden" name="id" value="7">
+          <input type="hidden" name="id" value="6">
                       <a href="#" class="product-item__image product-item__image--empty"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №6</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №7</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Наличие и цену<br>уточняйте у менеджера
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
+        </form>
+      </div>
+          <div class="products-list__item">
+        <form action="#" class="product-item  ">
+          <input type="hidden" name="id" value="7">
+                      <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+                    <div class="product-item__text">
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №7</a>  
+              </h2>
+            </div>
+          </div>
+          <div class="product-item__price">
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
@@ -485,20 +548,29 @@
           <input type="hidden" name="id" value="8">
                       <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №8</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №8</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricedesc">Розничная цена:</div>
-              <div class="product-item__pricevalue  price">10 122</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
@@ -506,19 +578,26 @@
           <input type="hidden" name="id" value="9">
                       <a href="#" class="product-item__image product-item__image--empty"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №9</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №9</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Наличие и цену<br>уточняйте у менеджера
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
           <div class="products-list__item">
@@ -526,25 +605,88 @@
           <input type="hidden" name="id" value="10">
                       <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
                     <div class="product-item__text">
-            <div class="product-item__subtitle">
-              Артикул: 0445110646
-              &nbsp;|&nbsp;
-              Bosch
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №10</a>  
+              </h2>
             </div>
-            <h2 class="product-item__title">
-              <a href="#">Форсунка №10</a>
-            </h2>
           </div>
           <div class="product-item__price">
-                          <div class="product-item__pricedesc">Розничная цена:</div>
-              <div class="product-item__pricevalue  price">10 122</div>
-                      </div>
-          <button type="submit" class="product-item__button"></button>
+            <div class="product-item-text">
+                              <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+                          </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
         </form>
       </div>
       </div>
-  <div class="products-list__bottom"></div>
-</div>    </div>
+  <div class="products-list__bottom">
+    <div class="products-list__scroll"></div>
+    <div class="products-list__pagination">
+      <div class="pagination">
+        <div class="pagination__text">Страницы</div>
+        <nav class="pagination__list">
+          <a href="#" class="pagination__item  active">1</a>
+          <a href="#" class="pagination__item">2</a>
+          <a href="#" class="pagination__item">3</a>
+          <span class="pagination__item pagination__item--dots"></span>
+          <a href="#" class="pagination__item">50</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>      </div>
+    </div>
+  </div>
+  <div class="bar bar--color">
+    <div class="container">
+      <div class="promo">
+        <div class="promo__main">
+          <div class="heading">
+            Предлагаем вам аналоги клапанов BOSCH и DELPHI
+            <br>собственного производства, бренда КТС-Дизель
+          </div>
+          <ul>
+            <li>Клапаны производятся на высокоточном японском оборудовании</li>
+            <li>Для идентификации на каждый клапан нанесен номер партии</li>
+            <li>При продаже мы предоставляем гарантию</li>
+            <li>Клапан упакован по аналогу оригинала</li>
+          </ul>
+          <p>
+            <small>Модельный ряд продукции будет расширяться!</small>
+          </p>
+        </div>
+        <div class="promo__aside">
+          <div class="product-promo">
+            <div class="product-promo__text  product-item-text">
+              <div class="product-item-text__aside">Артикул: 0445110646</div>
+              <div class="product-item-text__main">Клапан | КТС-Дизель</div>
+            </div>
+            <div class="product-promo__text  product-item-text">
+              <div class="product-item-text__aside">Специальная цена:</div>
+              <div class="product-item-text__main">
+                <span class="price">19 990</span>
+              </div>
+            </div>
+            <div class="product-promo__button">
+              <a href="#" class="button button--primary button--wide button--grad">Подробнее</a>
+            </div>
+            <div class="product-promo__image" style="background-image: url('res/promo.png')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
     </div>
     <div class="global__footer">
