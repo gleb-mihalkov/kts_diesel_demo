@@ -1408,7 +1408,7 @@ strong.no-marg {
   border-radius: 4px;
   background-color: #fff;
   position: relative;
-  padding: 42px 20px 0;
+  padding: 35px 20px 0;
 }
 .product-promo__image {
   background: no-repeat center center;
@@ -1426,7 +1426,7 @@ strong.no-marg {
   z-index: 10;
 }
 .product-promo__text {
-  margin: 30px 0;
+  margin: 26px 0;
 }
 .product-promo__text .price {
   font-size: 24px;
