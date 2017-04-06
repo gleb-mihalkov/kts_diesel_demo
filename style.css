@@ -1536,6 +1536,9 @@ strong.no-marg {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+.catalog-detail {
+  border: 1px solid #f2f2f2;
+}
 .catalog-detail__block:after {
   content: "";
   visibility: hidden;
@@ -1547,7 +1550,6 @@ strong.no-marg {
   width: 531px;
   height: 394px;
   border-right: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
   text-align: center;
   float: left;
 }
@@ -1564,7 +1566,6 @@ strong.no-marg {
   background-repeat: no-repeat !important;
 }
 .catalog-detail__info {
-  border-bottom: 1px solid #f2f2f2;
   height: 394px;
   float: left;
   padding: 31px;
@@ -1662,9 +1663,6 @@ strong.no-marg {
 .catalog-detail__info__presence span {
   font-weight: 700;
 }
-.catalog-detail__tabs {
-  width: 100%;
-}
 .catalog-detail__all-price {
   font-size: 14px;
   font-weight: 400;
@@ -1712,6 +1710,11 @@ strong.no-marg {
 .buy_one_click:hover {
   color: #d31020;
   transition: all 250ms ease-in-out;
+}
+.catalog-detail__tabs {
+  width: 100%;
+  margin: 30px 0 0 0;
+  border: 1px solid #f2f2f2;
 }
 .js-slider.left {
   float: left;
@@ -1773,6 +1776,93 @@ strong.no-marg {
   padding-left: 65px;
   color: #7e8792;
 }
+.tabs_nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 100%;
+  border-bottom: 1px solid #f2f2f2;
+}
+.tabs_nav__item {
+  width: 25%;
+  -ms-flex-order: 0;
+  order: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  text-align: center;
+  border-right: 1px solid #f2f2f2;
+  height: 71px;
+  line-height: 71px;
+  cursor: pointer;
+  position: relative;
+  background: #fafafa;
+}
+.tabs_nav__item:before {
+  height: 0;
+  transition: all 250ms ease-in-out;
+  content: '';
+}
+.tabs_nav__item.active,
+.tabs_nav__item:hover {
+  font-weight: 700;
+  background: #fff;
+  text-transform: uppercase;
+  color: #d31020;
+  border-top: none;
+}
+.tabs_nav__item.active:before,
+.tabs_nav__item:hover:before {
+  content: '';
+  background-color: #9a2d2a;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  height: 3px;
+  transition: all 250ms ease-in-out;
+}
+.tabs_nav__item.active:after,
+.tabs_nav__item:hover:after {
+  content: '';
+  background: url("/img/tab_arr.png") no-repeat center center;
+  width: 9px;
+  height: 6px;
+  display: inline-block;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  margin: 0 0 0 -4.5px;
+}
+.tabs_nav__item:last-child {
+  border: none;
+}
+.tabs_content {
+  position: relative;
+}
+.tabs_content__item {
+  padding: 31px 35px 27px 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 250ms ease-in-out;
+  opacity: 0;
+}
+.tabs_content__item.active {
+  opacity: 1;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  transition: all 250ms ease-in-out;
+}
 .collapse-list {
   display: block;
 }
@@ -1832,4 +1922,51 @@ strong.no-marg {
 }
 .collapse.active .collapse__content {
   height: 120px;
+}
+.responses-carousel__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.responses-carousel__heading {
+  display: block;
+  width: 341px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+.responses-carousel__heading a {
+  transition: all 250ms ease-in-out;
+  color: #1b2026;
+}
+.responses-carousel__heading a:hover {
+  color: #d31020;
+}
+.responses-carousel__dots {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.responses-carousel__dot {
+  transition: all 250ms ease-in-out;
+  border: 3px solid #bdc2c7;
+  border-radius: 50%;
+  background: transparent;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+}
+.responses-carousel__dot:first-child {
+  margin-left: 0;
+}
+.responses-carousel__dot.active,
+.responses-carousel__dot:hover {
+  background: #bdc2c7;
+}
+.responses-carousel__dot.active {
+  cursor: default;
 }
