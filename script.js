@@ -18,6 +18,11 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
       return false;
     });
 })(window.jQuery);
+!(function($) {
+  $(document).on('click', 'a', function(){
+    return false;
+  })
+})(window.jQuery);
 //
 /// ----------------------
 /// Подключение карты.
